@@ -1,0 +1,38 @@
+{
+  "name": "genpark-natural-language-fullstack-web-prototype-compiler-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Natural language fullstack web app compiler generating production React/Tailwind/Shadcn components, Supabase DB schemas, and GitHub sync.",
+  "author": "genpark",
+  "category": "app-builder",
+  "tags": [
+    "app-builder",
+    "natural-language-code",
+    "react-compiler",
+    "supabase-integration",
+    "lovable-dev"
+  ],
+  "inputs": {
+    "prompt_description": {
+      "type": "string"
+    },
+    "framework": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "prototype_build_id": {
+      "type": "string"
+    },
+    "components_generated_count": {
+      "type": "integer"
+    },
+    "live_preview_url": {
+      "type": "string"
+    },
+    "database_schema_sql_migrated": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
